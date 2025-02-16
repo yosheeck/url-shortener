@@ -1,0 +1,25 @@
+{
+  "name": "be",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist/server.js",
+    "start:watch": "nodemon dist/server.js",
+    "tsc": "tsc -b",
+    "tsc:watch": "tsc -b -w",
+    "watch": "tsc -b -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/nanoid": "^2.1.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "nanoid": "^5.1.0"
+  }
+}
