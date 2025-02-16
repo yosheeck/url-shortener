@@ -28,7 +28,7 @@ function App() {
           <form onSubmit={handleFormSubmit}>
             URL<br/>
             <input type="text" value={inputUrl} onChange={handleInputURLChange}/>
-            <button type="submit" onClick={() => postShortenURL()}>
+            <button type="submit">
               Shorten
             </button>
           </form>

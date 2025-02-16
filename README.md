@@ -23,6 +23,22 @@ Details:
 BE: 8001
 FE: 8002
 
+# Database
+
+Start mongoDB by running:
+```
+docker compose up
+```
+in root folder.
+
+## Explanation (if you're new to docker)
+
+Docker will look into `docker-compose.yml` file. Docker will find that "mongo" container needs to be started.
+
+Then it will download all `mongo` docker "layers" from docker hub and run mongoDB inside the container.
+
+The port `27017` will be exposed from the insider of the container, so that the application can hit 27017 to talk to MongoDB. The port number is explicitly given in the configuration in the `docker-compose.yml` file.
+
 # Frontend
 
 This app was created with 
@@ -33,3 +49,11 @@ as a starting point.
 I picked `Typescript + SWC` in configuration.
 
 > Note: CRA (Create React App) is deprecated (according to their own website) and React homepage advice is to use any of the existing frameworks.
+
+# Backend
+
+It's pure node.js + Express. It uses nanoid to generate nice-looking shortened URLs.
+
+# How to run it
+
+// TODO

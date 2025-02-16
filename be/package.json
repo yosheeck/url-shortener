@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "node dist/server.js",
-    "start:watch": "nodemon dist/server.js",
+    "start": "node dist/server.mjs",
+    "start:watch": "nodemon dist/server.mjs",
     "tsc": "tsc -b",
     "tsc:watch": "tsc -b -w",
     "watch": "tsc -b -w"
@@ -20,6 +20,7 @@
   },
   "dependencies": {
     "express": "^4.21.2",
+    "mongodb": "^6.13.0",
     "nanoid": "^5.1.0"
   }
 }
